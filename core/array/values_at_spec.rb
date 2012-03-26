@@ -14,7 +14,7 @@ describe "Array#values_at" do
   end
 
   it "returns an array of elements in the ranges when passes ranges" do
-    [1, 2, 3, 4, 5].values_at(0..2, 1...3, 4..6).should == [1, 2, 3, 2, 3, 5, nil]
+    [1, 2, 3, 4, 5].values_at(0..2, 1...3, 4..6).should == [1, 2, 3, 2, 3, 5]
     [1, 2, 3, 4, 5].values_at(6..4).should == []
   end
 
